@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* ======================================================  STYLES GÉNÉRAUX  ====================================================== */
+
+body {
+    background-image: linear-gradient(rgb(3, 3, 150), rgb(18, 157, 250));
+    color: #A5DCE5;
+}
+
+
+main{
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+section{
+    align-self: center;
+}
+.evenements{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    grid-gap: 3em;
+    color: black;
+}
+.evenement{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(204, 204, 204, 0.349);
+    padding: 3%;
+    border-radius: 3em;
+    padding-top: 0;
+}
+h4{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+#carte{
+    display: none;
+    align-self: center;
+    margin-top: 3rem;
+}
+
+/* ======================================================  STYLES MOBILES  ======================================================= */
+@media (max-width:633px) {
+    main{
+        top: -18rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .evenement img{
+        width: 50vw;
+        height: 50vw;
+    }
+    #carte{
+        width: 80vw;
+    }
+ } 
+/* fin de media mobile */
+
+/* ======================================================  STYLES TABLETTES  ===================================================== */
+@media (min-width:634px) and (max-width:976px) {
+    main{
+        top: -18rem;
+    }
+    .evenement img{
+        width: 20vw;
+        height: 20vw;
+    }
+    #carte{
+        width: 75vw;
+    }
+    h3{
+        font-size: 2rem;
+    }
+ }
+/* fin de media tablette */
+
+/* ======================================================  STYLES GRANDS ÉCRANS  ================================================= */
+@media (min-width:977px) {
+    main{
+        top: -6.5rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    #message{
+        font-size: 1.2rem;
+        width: 65%;
+        align-self: center;
+    }
+    .evenements{
+        grid-template-columns: 1fr 1fr;
+        
+
+    }
+    .evenement{
+        flex-direction: column;
+    }
+    .evenm-cont{
+        display: flex;
+        flex-direction: row;
+    }
+    .evenement img{
+        width: 19vw;
+        height: 19vw;
+        margin: 1rem;
+    }
+    .evenement p{
+        width: 19vw;
+    }
+    #carte{
+        width: 75vw;
+    }
+}
+/* fin de media grands écrans */
+
+/* ======================================================  FIN DE PAGE  ================================================= */

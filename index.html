@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Département de physique du collège de MAisonneuve</title>
+
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div id="logo">
+                <img src="images/logo_ordi.png" alt="Logo collège de Maisonneuve">
+            </div>
+            <h1>Département de physique de Maisonneuve</h1>
+            <button class="accueil" href="file:///C:/Users/jpoir/OneDrive/Bureau/TP-Final/index.html">Accueil</button>
+        </div>
+        <div class="nav" id="nav">
+            <nav>
+                <a id="nav-programmes" onclick="bougerMenu(0)">
+                    <p>Programme</p>
+                </a>
+                <a id="nav-notes" onclick="bougerMenu(1)">
+                    <p>Notes de Cours</p>
+                </a>
+                <a id="nav-livres" onclick="bougerMenu(2)">
+                    <p>Livres</p>
+                </a>
+                <a id="nav-logiciels" onclick="bougerMenu(3)">
+                    <p>Logiciels et accès</p>
+                </a>
+                <a id="nav-profs" onclick="bougerMenu(4)">
+                    <p>Professeurs</p>
+                </a>
+            </nav>
+            <div id="nav2-programmes" class="nav2">
+                <a href="">
+                    <p>Sciences de la Nature</p>
+                </a>
+                <a href="">
+                    <p>Sciences Informatiques et Mathématiques (SIM)</p>
+                </a>
+                <a href="">
+                    <p>Sciences, Lettres et Arts (SLA)</p>
+                </a>
+                <a href="">
+                    <p>Technologie de l'Électronique (TGE)</p>
+                </a>
+            </div>
+            <div id="nav2-notes" class="nav2">
+                <a href="">
+                    <p>Mathématiques</p>
+                </a>
+                <a href="">
+                    <p>Mécaniques</p>
+                </a>
+                <a href="">
+                    <p>Électricité et Magnétisme</p>
+                </a>
+                <a href="">
+                    <p>Ondes et Physique Moderne</p>
+                </a>
+            </div>
+            <div id="nav2-livres" class="nav2">
+                <a href="">
+                    <p>Mécanique</p>
+                </a>
+                <a href="">
+                    <p>Électricité et Magnétisme</p>
+                </a>
+                <a href="">
+                    <p>Ondes et Physique Moderne</p>
+                </a>
+            </div>
+            <div id="nav2-logiciels" class="nav2">
+                <a href="">
+                    <p>Acrobat Reader</p>
+                </a>
+                <a href="">
+                    <p>Office 365</p>
+                </a>
+                <a href="">
+                    <p>Chess</p>
+                </a>
+            </div>
+            <div id="nav2-profs" class="nav2">
+                <a href="">
+                    <p>Sciences de la Nature</p>
+                </a>
+                <a href="">
+                    <p>Sciences Informatiques et Mathématiques (SIM)</p>
+                </a>
+                <a href="">
+                    <p>Sciences, Lettres et Arts (SLA)</p>
+                </a>
+                <a href="">
+                    <p>Technologie de l'Électronique (TGE)</p>
+                </a>
+            </div>
+            <img id="menu-burger" src="images/bars-solid.svg" alt="menu" onclick="bougerMenuUn()">
+
+        </div>
+    </header>
+
+    <main>
+
+        <!------------ CONTENU ------------>
+        <h3>Bienvenue sur le site du Département de Physique du Collège de Maisonneuve</h3>
+        <p id="message">Ici, tu pourra découvrir le programme de physique
+            pour tous les cours. tu pourra retrouver les notes de cours,
+            les livres de cours, les projets et tous les logiciels et accès
+            necessaires pour ta réussite dans le programme.</p>
+        <section>
+            <h2>ÉVÉNEMENTS À LA UNE!</h2>
+            <div class="evenements">
+                <div class="evenement">
+                    <h4>100 ans d'excellence en physique à l'UdeM</h4>
+                    <div class="evenm-cont">
+                        <img src="images/Centenaire.jpg" alt="Centenaire">
+                        <p>L’Institut de recherche sur les exoplanètes, en
+                            collaboration avec le département de physique
+                            de l’Université de Montréal et le Centre de
+                            recherche en astrophysique du Québec organise
+                            la Soirée d’initiation à la recherche en
+                            astrophysique, une version en ligne des
+                            populaires Journées d’initiation à la recherche en
+                            physique, organisées chaque année à l’Université
+                            de Montréal.<br>
+                            L’évènement sera en français.</p>
+                    </div>
+                </div>
+                <div class="evenement">
+                    <h4>L'Infini VR</h4>
+                    <div class="evenm-cont">
+                        <img src="images/PHI_Infinite_Hero_Publication_Nasa_-FR-1200x628.jpg" alt="god_howard">
+                        <p>L’Institut de recherche sur les exoplanètes, en
+                            collaboration avec le département de physique
+                            de l’Université de Montréal et le Centre de
+                            recherche en astrophysique du Québec organise
+                            la Soirée d’initiation à la recherche en
+                            astrophysique, une version en ligne des
+                            populaires Journées d’initiation à la recherche en
+                            physique, organisées chaque année à l’Université
+                            de Montréal.<br>
+                            L’évènement sera en français.</p>
+                    </div>
+
+                </div>
+                <div class="evenement">
+                    <h4>Congrès international sur le conseil scientifique
+                        aux gouvernements</h4>
+                    <div class="evenm-cont">
+                        <img src="images/INGSA-2021.jpg" alt="god_howard">
+                        <p>L’Institut de recherche sur les exoplanètes, en
+                            collaboration avec le département de physique
+                            de l’Université de Montréal et le Centre de
+                            recherche en astrophysique du Québec organise
+                            la Soirée d’initiation à la recherche en
+                            astrophysique, une version en ligne des
+                            populaires Journées d’initiation à la recherche en
+                            physique, organisées chaque année à l’Université
+                            de Montréal.<br>
+                            L’évènement sera en français.</p>
+                    </div>
+                </div>
+                <div class="evenement">
+                    <h4>Arts et Sciences UdeM</h4>
+                    <div class="evenm-cont">
+                        <img src="images/images.png" alt="god_howard">
+                        <p>L’Institut de recherche sur les exoplanètes, en
+                            collaboration avec le département de physique
+                            de l’Université de Montréal et le Centre de
+                            recherche en astrophysique du Québec organise
+                            la Soirée d’initiation à la recherche en
+                            astrophysique, une version en ligne des
+                            populaires Journées d’initiation à la recherche en
+                            physique, organisées chaque année à l’Université
+                            de Montréal.<br>
+                            L’évènement sera en français.</p>
+                    </div>
+                </div>
+                <div class="evenement">
+                    <h4>God Howard</h4>
+                    <div class="evenm-cont">
+                        <img src="images/god_howard.png" alt="god_howard">
+                        <p>"It just works" <br>C'est la seule loi qui définit la physique de ce monde par dessus tout.
+                            Avons-nous trouvé un moyen de lire l'espace comme s'il s'agissait d'un livre ? Une façon de
+                            voir le temps et de le ressentir comme si nous pouvions le saisir ? Avons-nous trouvé un
+                            moyen de plier et de façonner le tissu de la réalité comme le forgeron qui forge sa
+                            meilleure lame? non? Alors cette maxime devrait encore nous rappeler à quel point nous
+                            savons peu de choses sur cet univers et nous pousse à aller de l'avant dans notre quête de
+                            connaissances. Puissent les Parchemins Anciens vous acompagner jusqu'au fond d'un bunker ou
+                            au sommet de La Gorge du Monde<br>"It just works"</p>
+                    </div>
+                </div>
+                <div class="evenement">
+                    <h4>Sensorium<br>Musée des Beaux Arts de Montréal</h4>
+                    <div class="evenm-cont">
+                        <img src="images/20200213_artenso_sensorium_web.jpg" alt="god_howard">
+                        <p>L’Institut de recherche sur les exoplanètes, en
+                            collaboration avec le département de physique
+                            de l’Université de Montréal et le Centre de
+                            recherche en astrophysique du Québec organise
+                            la Soirée d’initiation à la recherche en
+                            astrophysique, une version en ligne des
+                            populaires Journées d’initiation à la recherche en
+                            physique, organisées chaque année à l’Université
+                            de Montréal.<br>
+                            L’évènement sera en français.</p>
+                    </div>
+                </div>
+                <div class="evenement">
+                    <h4>Soirée d'initiation à la recherche en astrophysique à l'UdeM</h4>
+                    <div class="evenm-cont">
+                        <img src="images/evenement1.png" alt="god_howard">
+                        <p>L’Institut de recherche sur les exoplanètes, en
+                            collaboration avec le département de physique
+                            de l’Université de Montréal et le Centre de
+                            recherche en astrophysique du Québec organise
+                            la Soirée d’initiation à la recherche en
+                            astrophysique, une version en ligne des
+                            populaires Journées d’initiation à la recherche en
+                            physique, organisées chaque année à l’Université
+                            de Montréal.<br>
+                            L’évènement sera en français.</p>
+                    </div>
+                </div>
+                <div class="evenement">
+                    <h4>Humani Sciences</h4>
+                    <div class="evenm-cont">
+                        <img src="images/670-351-humanisciences.jpg" alt="god_howard">
+                        <p>L’Institut de recherche sur les exoplanètes, en
+                            collaboration avec le département de physique
+                            de l’Université de Montréal et le Centre de
+                            recherche en astrophysique du Québec organise
+                            la Soirée d’initiation à la recherche en
+                            astrophysique, une version en ligne des
+                            populaires Journées d’initiation à la recherche en
+                            physique, organisées chaque année à l’Université
+                            de Montréal.<br>
+                            L’évènement sera en français.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <iframe id="carte"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22351.786936666478!2d-73.57080896044917!3d45.55086130000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bf5bacbeffd%3A0x68ff300997eff5c!2sColl%C3%A8ge%20de%20Maisonneuve!5e0!3m2!1sfr!2sca!4v1638826688767!5m2!1sfr!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
+    <footer>
+
+        <div class="footer">
+            <p id="simon">Site original par:<br>Simon Vézina</p>
+            <div id="info">
+                <p onclick="Apparaitre()">3800, rue Sherbrooke Est Montréal (Québec)<br>H1X 2A2 | (514)-254-7131</p>
+                <p id="copyright">Copyright © 2014 - Collège de Maisonneuve. Tous droits réservés.</p>
+            </div>
+            <p id="julien">Retouche par:<br>Julien Poirier Morin</p>
+        </div>
+
+    </footer>
+
+    <script src="JS/nav.js"></script>
+    <script src="JS/carte.js"></script>
+</body>
+
+</html>

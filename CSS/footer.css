@@ -1,0 +1,61 @@
+footer{
+    background-image: linear-gradient(to right, rgb(0, 82, 136), rgb(2, 2, 204));
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+    padding: 0 2rem 0 2rem;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+}
+#info :first-child:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#copyright{
+    font-size: 0.8rem;
+}
+/* ======================================================  STYLES MOBILES  ======================================================= */
+@media (max-width:633px) {
+    .footer{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-template-areas: "julien simon" "info info";
+        padding: 0 1rem 0 1rem;
+    }
+    .footer p{
+        line-height: 1.3rem;
+        height: 1rem;
+    }
+    #simon{
+        order: 1;
+        grid-area: simon;
+    }
+    #julien{
+        order: 2;
+        grid-area: julien;
+    }
+    #info{
+        order: 3;
+        grid-area: info;
+    }
+    #info p{
+        flex: 0 1;
+    }
+} /* fin de media mobile */
+
+/* ======================================================  STYLES GRANDS ÉCRANS  ======================================================= */
+@media (min-width:634px) {
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer p{
+        line-height: 1.5rem;
+    }
+} /* fin de media mobile */
